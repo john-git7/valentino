@@ -1,0 +1,145 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: static;
+    background-color: #fce4ec;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    text-align: center;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+}
+
+h1 {
+    color: #d81b60;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+#quoteDisplay {
+    font-size: 18px;
+    color: #7b1fa2;
+    margin-bottom: 20px;
+    font-style: italic;
+}
+button {
+    padding: 17px 40px;
+    border-radius: 50px;
+    cursor: pointer;
+    border: 0;
+    background-color: white;
+    box-shadow: rgb(0 0 0 / 5%) 0 0 8px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    font-size: 15px;
+    transition: all 0.5s ease;
+  }
+  
+  button:hover {
+    letter-spacing: 4px;
+    background-color:  hsl(320, 100%, 49%);
+    color: hsl(0, 0%, 100%);
+    box-shadow:  hsl(320, 100%, 63%) 0px 7px 29px 0px;
+  }
+  
+  button:active {
+    letter-spacing: 3px;
+    background-color: hsl(24, 191, 220);
+    color: hsl(0, 0%, 100%);
+    box-shadow:  hsl(320, 100%, 63%) 0px 0px 0px 0px;
+    transform: translateY(10px);
+    transition: 100ms;
+  }
+  .petal {
+    position: absolute;
+    background-color: #ff4d6d;
+    width: 20px;
+    height: 20px;
+    border-radius: 50% 40% 10%;
+    opacity: 0;
+    animation: fall 5s linear infinite;
+}
+
+#petal1 {
+    top: -50px;
+    left: 20%;
+    animation-delay: 0s;
+}
+
+#petal2 {
+    top: -50px;
+    left: 35%;
+    animation-delay: 1s;
+}
+
+#petal3 {
+    top: -50px;
+    left: 60%;
+    animation-delay: 2s;
+}
+
+#petal4 {
+    top: -50px;
+    left: 80%;
+    animation-delay: 2.5s;
+}
+#petal5 {
+    top: -50px;
+    left: 30%;
+    animation-delay: 4s;
+}
+#petal6 {
+    top: -50px;
+    left: 5%;
+    animation-delay: 1s;
+}
+#petal7 {
+    top: -50px;
+    left: 70%;
+    animation-delay: 2s;
+}
+
+#petal8 {
+    top: -50px;
+    left: 10%;
+    animation-delay: 2s;
+}
+#petal9 {
+    top: -50px;
+    left: 15%;
+    animation-delay: 1s;
+}
+#petal10 {
+    top: -50px;
+    left: 75%;
+    animation-delay: 1.5s;
+}
+#petal11 {
+    top: -50px;
+    left: 85%;
+    animation-delay: 2.7s;
+}
+@keyframes fall {
+    0% {
+        transform: translateY(0) rotate(0deg);
+        opacity: 5;
+    }
+    50% {
+        opacity: 5;
+    }
+    100% {
+        transform: translateY(500px) rotate(360deg);
+    }
+}
